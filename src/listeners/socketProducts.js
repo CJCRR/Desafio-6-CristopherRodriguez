@@ -3,7 +3,7 @@ const pm = new ProductManager()
 
 const socketProducts = (socketServer) => {
     socketServer.on("connection", async (socket) => {
-        console.log("client connected con ID:", socket.id)
+        console.log("client connected")
         const listadeproductos = await pm.getProductsView()
         socketServer.emit("enviodeproducts", listadeproductos)
 
@@ -25,7 +25,7 @@ const socketProducts = (socketServer) => {
             socket.broadcast.emit("broadcast", usuario)
         })
         socket.on("disconnect", () => {
-            console.log(`Usuario con ID : ${socket.id} esta desconectado `)
+            console.log(`Usuario esta desconectado `)
         })
 
     })
