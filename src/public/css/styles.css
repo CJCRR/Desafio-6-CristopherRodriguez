@@ -59,6 +59,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .box-form-login {
@@ -69,6 +70,71 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.box-form-login .formLogin label {
+  margin-top: 20px;
+}
+.box-form-login .formLogin input {
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 20px;
+}
+.box-form-login .formLogin .buttonsLogin {
+  width: 35%;
+  gap: 10px;
+  margin-top: 20px;
+}
+.box-form-login .formLogin .buttonsLogin button {
+  border-radius: 10px;
+}
+
+.buttonRegister {
+  width: 20%;
+}
+
+.register {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.box-form-register {
+  display: flex;
+  flex-direction: column;
+}
+.box-form-register .formRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-form-register .formRegister label {
+  margin-top: 20px;
+}
+.box-form-register .formRegister input {
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 20px;
+}
+.box-form-register .formRegister button {
+  width: 35%;
+  gap: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.perfil {
+  margin-top: 100px;
+}
+
+.box-perfil {
+  margin-top: 20px;
+}
+.box-perfil h4 {
+  margin-top: 20px;
+}
+.box-perfil .form-logout {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

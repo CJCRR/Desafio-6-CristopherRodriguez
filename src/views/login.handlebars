@@ -6,9 +6,13 @@
             <input type="email" id="email" name="email" required>
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
-            <button type="submit">Iniciar Sesión</button>
+            <div class="row buttonsLogin">
+                <button type="submit" class="col btn btn-outline-primary">Iniciar Sesión</button>
+                <button onclick="location.href='/register'" class="col btn btn-outline-primary">Registrarse</button>
+            </div>
         </form>
+        
     </div>
-    <button onclick="location.href='/register'">Registrarse</button>
+    
 </div>
 <script src="/js/login.js"></script>

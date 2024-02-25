@@ -1,11 +1,12 @@
 <div class="container">
-    <h1>Perfil de Usuario</h1>
-        
-        <p>Nombre: {{ this.first_name }}</p>
-        <p>Apellido: {{ this.last_name }}</p>
-        <p>Correo electrónico: {{ this.email }}</p>
-        <p>Edad: {{ this.age }}</p>
-        <form action="/logout" method="GET">
-            <button type="submit">Logout</button>
+    <h1 class="perfil">Perfil de Usuario</h1>
+    <div class="box-perfil">
+        <h4>Nombre: {{ this.first_name }}</h4>
+        <h4>Apellido: {{ this.last_name }}</h4>
+        <h4>Correo electrónico: {{ this.email }}</h4>
+        <h4>Edad: {{ this.age }}</h4>
+        <form action="/logout" method="GET" class="form-logout">
+            <button type="submit" class="btn btn-outline-danger">Logout</button>
         </form>
+    </div>
 </div>
